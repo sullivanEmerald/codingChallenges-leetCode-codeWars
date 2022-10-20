@@ -63,4 +63,14 @@ function maxNumber(arr){
 }
 
 
-console.log(maxNumber([2,5,5,6, 15,8,10]))
+// console.log(maxNumber([2,5,5,6, 15,8,10]))
+
+function maxNumberSort(arr){
+    
+    let result =  arr.sort((a,b) => a -     b)
+
+    return Math.max(...result) , Math.min(...result) 
+
+    }
+
+console.log(maxNumberSort([2,5,3,6,3,4]))
