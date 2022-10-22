@@ -67,10 +67,19 @@ function maxNumber(arr){
 
 function maxNumberSort(arr){
     
-    let result =  arr.sort((a,b) => a -     b)
+    let result =  arr.sort((a,b) => a - b)
 
     return Math.max(...result) , Math.min(...result) 
 
     }
 
-console.log(maxNumberSort([2,5,3,6,3,4]))
+// console.log(maxNumberSort([2,5,3,6,3,4]))
+
+
+
+let array8 =  [3, 4, 5, 6, 5 , 6]
+
+const filteringNumber = arr => arr.filter(item => arr.indexOf(item) === arr.lastIndexOf(item)).reduce((a,c) => a + c)
+
+console.log(filteringNumber(array8))
+console.log(filteringNumber(array8))
