@@ -15,3 +15,12 @@ function evenNumbers(array, number) {
 console.log(evenNumbers([1, 2, 3, 4, 5, 6, 7, 8, 9], 3))
 console.log(evenNumbers([-22, 5, 3, 11, 26, -6, -7, -8, -9, -8, 26], 2))
 console.log(evenNumbers([6, -25, 3, 7, 5, 5, 7, -3, 23], 1))
+
+
+// function evenNum(arr, n){
+//     return arr.map(item => Number(item)).filter(n => n % 2 === 0).slice(-n)
+// }
+
+const  evenNum = (arr, n) => arr.map(item => +item).filter(n => n % 2 === 0).slice(-n)
+
+console.log(evenNum([2 ,5,7, 8 , '12', '20', '10', 6, '27', '17'], 3))
