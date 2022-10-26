@@ -10,9 +10,16 @@
 // solve([[1,2,3],[3,4,6,6,7],[8,9,10,12,5,6]]),72)
 
 
-function setArray(set){
-    return set.map(item => [...new Set(item)].length).reduce((acc, c) => acc * c)
-}
+// function setArray(set){
+//     return set.map(item => [...new Set(item)].length).reduce((acc, c) => acc * c)
+// }
 
-console.log(setArray([[1,2,3],[3,4,6,6,7],[8,9,10,12,5,6]]))
-console.log(setArray([[1,2],[3,4],[5,6]]))
+
+// function setArray(arr){
+//     return arr.map(item => new Set(item).size).reduce((acc,c) => acc * c)
+// }
+
+const setArray2 = arr => arr.reduce((acc,c) => acc * new Set(c).size,1)
+
+console.log(setArray2([[1,2,3],[3,4,6,6,7],[8,9,10,12,5,6]]))
+console.log(setArray2([[1,2],[3,4],[5,6]]))
