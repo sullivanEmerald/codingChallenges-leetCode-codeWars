@@ -32,6 +32,8 @@ function addNumber(num){
 
 
 
+let array3 = [2,2,3,3,4,4,5,5,6,6,7,8]
+
 function numbersOne(arr){
     let newArray = []
         for(let i = 0; i < arr.length; i++){
@@ -43,7 +45,7 @@ function numbersOne(arr){
     return newArray
 }
 
-// console.log(numbersOne(array3))
+console.log(numbersOne(array3))
 
 let array4 = [2,2,3,3,4,4,5,5,6,6]
 
@@ -104,5 +106,5 @@ function binarySearch(arr){
     }
 }
 
-console.log(binarySearch([2,4,3,2,9,7,10], 15))
+// console.log(binarySearch([2,4,3,2,9,7,10], 15))
 

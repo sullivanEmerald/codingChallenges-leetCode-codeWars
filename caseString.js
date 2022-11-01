@@ -11,13 +11,14 @@
 
 
 
-function reverseString(str){
-   let result =  str.split('').map(item => item === item.toLowerCase() ? item.toUpperCase() : item.toLowerCase()).join('')
+// function reverseString(str){
+//    let result =  str.split('').map(item => item === item.toLowerCase() ? item.toUpperCase() : item.toLowerCase()).join('')
 
 
-    return result.split(' ').reverse().join(' ')
+//     return result.split(' ').reverse().join(' ')
 
-}
+// }
 
+const reverseString =  str => str.split('').map(item => item === item.toLowerCase() ? item.toUpperCase() : item.toLowerCase()).join('').split(' ').reverse().join(' ')
 
-console.log(reverseString( 'Example Input' ))
+console.log(reverseString('Example Input'))
