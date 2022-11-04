@@ -12,4 +12,14 @@ function lastChar(last){
 }
 
 
-console.log(lastChar("man i need a taxi up to ubud"))
+// console.log(lastChar("man i need a taxi up to ubud"))
+
+
+
+function sortString(last){
+    
+    return last.split(' ').sort((a,b) => a.slice(-1)  > b.slice(-1))
+}
+
+
+console.log(sortString("man i need a taxi up to ubud"))
