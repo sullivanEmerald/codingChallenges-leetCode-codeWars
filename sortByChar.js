@@ -23,3 +23,7 @@ function sortString(last){
 
 
 console.log(sortString("man i need a taxi up to ubud"))
+
+
+// added to another method
+
