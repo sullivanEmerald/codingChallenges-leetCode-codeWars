@@ -27,7 +27,7 @@
 // function arrDiff(list1 , list2){
     
 //     for(let i =0; i < list1.length; i++){
-//         if(list2.includes(list1[1])){
+//         if(list2.includes(list1[i])){
 //             return list1[i]
 //         }
 //     }
