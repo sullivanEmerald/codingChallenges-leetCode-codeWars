@@ -13,6 +13,7 @@
     // }
 
     // constantaine
+    // revised and modified
     function sortOdd(arr){
         let result = arr.filter(item => item % 2 !== 0).sort((a,b) => b - a)
         console.log(result)
