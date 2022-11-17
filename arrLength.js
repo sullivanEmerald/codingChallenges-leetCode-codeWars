@@ -8,6 +8,10 @@ function strArr(arr){
 
     let result =  Math.round(arr.reduce((a,b) => a + b).length / arr.length)
 
+    // Math.round(arr.reduce((a,b) => a + b).length / arr.length)
+
+    
+
     // return arr.map(item => {
     //     if(item.length === result) return item
     //     if (item.length < result) return item += item.split('')[0]
