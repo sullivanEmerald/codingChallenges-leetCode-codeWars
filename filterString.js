@@ -6,7 +6,7 @@
 
 
 function duplicateString(string){
-    return string.split(' ').filter((item, i , arr) => item !== arr[i + 1])
+    return string.split(' ').filter((item, i , arr) => item !== arr[i + 1]).join(' ')
 }
 
 console.log(duplicateString( 'alpha beta beta gamma gamma gamma delta alpha beta beta gamma gamma gamma delta'))
