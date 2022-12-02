@@ -13,8 +13,19 @@
 
 function removeDuplicate(arr){
 
-  return arr.map(item => item.split('').filter((item, i , arr) => item !== arr[ i + 1]).join(''))
+//   return arr.map(item => item.split('').filter((item, i , arr) => item !== arr[ i + 1]).join(''))
+
+   let array = []
+
+   for(let i = 0; i < arr.length; i++){
+
+      console.log(arr[i])
+   }
 
 }
 
-console.log(removeDuplicate(["ccooddddddewwwaaaaarrrrsssss","piccaninny","hubbubbubboo"]))
+// console.log(removeDuplicate(["ccooddddddewwwaaaaarrrrsssss","piccaninny","hubbubbubboo"]))
+let result = duplicateString(["ccooddddddewwwaaaaarrrrsssss","piccaninny","hubbubbubboo"])
+console.log(result)
+
+
